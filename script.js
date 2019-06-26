@@ -20,8 +20,25 @@ function searchWeather(searchTerm) {
     })
 }
 function init(resultFromServer) {
+    switch (resultFromServer.weather[0].main) {
+        case 'Clear':
+            break;
+        case 'Clouds':
+            break;
+        case 'Rain':
+        case 'Drizzle':
+        case 'Mist':
+            break;
+        case 'Thunderstorm':
+            break;
+        case 'Snow':
+            break;
+        default:
+            break;
+    }
+    }
+
     console.log(resultFromServer);
-}
 document.getElementById("searchButton").addEventListener('click', () => {
 let searchTerm = document.getElementById('searchInput').value;
 if (searchTerm)
