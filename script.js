@@ -20,7 +20,7 @@ function searchWeather(searchTerm) {
     })
 }
 function init(resultFromServer) {
-    // console.log(resultFromServer);
+    console.log(resultFromServer);
 
     switch (resultFromServer.weather[0].main) {
         case 'Clear':
@@ -45,12 +45,12 @@ function init(resultFromServer) {
             break;
             
     }
-        let weatherDescriptionHeader = document.getElementById(weatherDescriptionHeader);
-        let temperatureElement = document.getElementById(temperature);
-        let humidityElement = document.getElementById(humidity);
-        let windSpeedElement = document.getElementById(windSpeed);
-        let cityHeader = document.getElementById(cityHeader);
-        let weatherIcon = document.getElementById(documentIconImg);
+        let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
+        let temperatureElement = document.getElementById('temperature');
+        let humidityElement = document.getElementById('humidity');
+        let windSpeedElement = document.getElementById('windSpeed');
+        let cityHeader = document.getElementById('cityHeader');
+        let weatherIcon = document.getElementById('documentIconImg');
 
         weatherIcon.src ='http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
     }
