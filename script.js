@@ -53,6 +53,8 @@ function init(resultFromServer) {
         let weatherIcon = document.getElementById('documentIconImg');
 
         weatherIcon.src ='http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
+        let resultDescription = resultFromServer.weather[0].description;
+        weatherDescriptionHeader.innerText = resultDescription;
     }
 
     // console.log(resultFromServer);
