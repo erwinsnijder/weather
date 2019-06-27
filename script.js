@@ -62,6 +62,15 @@ function init(resultFromServer) {
         humidityElement.innerHTML = 'Humidity levels at ' + resultFromServer.main.humidity + '%';
     }
 
+    function setPositionForWeatherInfo() {
+        let weatherContainer = document.getElementById(weatherContainer);
+        let weatherContainerHeight = weatherContainer.clientHeight;
+        let weatherContainerWidth = weatherContainer.clientWidth;
+
+        let weatherContainer.style.left = `calc(50% - ${weatherContainerWidth/2})`;
+        let weatherContainer.style.top =  `calc(50% - ${weatherContainerheight/1.3})`;
+    }
+
 document.getElementById("searchButton").addEventListener('click', () => {
 let searchTerm = document.getElementById('searchInput').value;
 if (searchTerm)
