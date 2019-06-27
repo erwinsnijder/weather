@@ -9,11 +9,16 @@ body {
     text-shadow: 2px 2px 1px black;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-#weathercontainer {
+#weatherDescription {
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: 1px 1px 5px black;
     padding: 50px;
     border-radius: 10px;
     position: absolute;
-    visibility: hidden;
+    /* visibility: hidden; */
+}
+#weatherDescription h1 {
+    margin: 5px;
+    font-size: 42px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
