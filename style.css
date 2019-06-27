@@ -72,3 +72,11 @@ textarea:focus, input:focus{
     font-size: 38px;
     vertical-align: 25%;
 }
+.bottomDetails {
+display: block;
+font-size: 24px;
+text-align: right;
+}
+hr {
+    margin: 20px;
+}
