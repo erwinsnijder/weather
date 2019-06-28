@@ -35,7 +35,7 @@ function init(resultFromServer) {
                 document.body.style.backgroundImage = 'url("rain.jpg")';
             break;
         case 'Thunderstorm':
-                document.body.style.backgroundImage = 'url("storm,jpg")';
+                document.body.style.backgroundImage = 'url("storm.jpg")';
             break;
         case 'Snow':
                 document.body.style.backgroundImage = 'url("snow.jpg")';
